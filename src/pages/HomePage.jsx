@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Products from '../components/Products';
+import PhotoStrip from '../components/PhotoStrip';
 import FarmerCTA from '../components/FarmerCTA';
 import Reviews from '../components/Reviews';
 import Contact from '../components/Contact';
@@ -18,6 +19,9 @@ const HomePage = ({ lang = 'mr' }) => {
 
       {/* Products Section */}
       <Products lang={lang} />
+
+      {/* 2-Photo Horizontal Variety Specifications & Gallery Section */}
+      <PhotoStrip lang={lang} />
 
       {/* Big Farmer CTA / Helpline Section */}
       <FarmerCTA lang={lang} />

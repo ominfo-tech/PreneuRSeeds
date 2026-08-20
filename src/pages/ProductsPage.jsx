@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, PhoneCall, Download, FileText, Sparkles, Filter, CheckCircle2 } from 'lucide-react';
+import PhotoStrip from '../components/PhotoStrip';
 
 const ProductsPage = ({ lang = 'mr' }) => {
   const isMr = lang === 'mr';
@@ -238,6 +239,9 @@ const ProductsPage = ({ lang = 'mr' }) => {
               </div>
             ))}
           </div>
+
+          {/* 2-Photo Horizontal Variety Specifications & Gallery Section */}
+          <PhotoStrip lang={lang} />
 
           {/* Brochure Download Strip */}
           <div className="catalog-brochure-card reveal-up">
