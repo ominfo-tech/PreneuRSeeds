@@ -238,7 +238,7 @@ button {
 }
 
 .brand-logo {
-  height: 68px;
+  height: 76px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -375,7 +375,7 @@ button {
 
 .hero-bg-title {
   font-size: 4.4rem;
-  line-height: 1.15;
+  line-height: 1.18;
   font-weight: 900;
   color: #ffffff;
   letter-spacing: -0.03em;
@@ -383,8 +383,20 @@ button {
   animation: heroSlideDown 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+.hero-seeds-normal {
+  font-weight: 400;
+  font-size: 0.88em;
+  letter-spacing: -0.01em;
+  opacity: 0.95;
+}
+
 .highlight-text {
+  display: block;
+  font-size: 0.52em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   color: #fdd835;
+  margin-top: 6px;
   text-shadow: 0 4px 25px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.95);
 }
 
@@ -1419,11 +1431,15 @@ button {
 }
 
 .footer-logo {
-  height: 65px;
+  height: 72px;
   width: auto;
   object-fit: contain;
   margin-bottom: 16px;
   display: inline-block;
+  background: #ffffff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .footer-tagline {
@@ -1639,7 +1655,7 @@ button {
     padding-top: 120px;
   }
   .brand-logo {
-    height: 56px;
+    height: 64px;
   }
   .hero-bg-title {
     font-size: 2.6rem;
@@ -1891,7 +1907,7 @@ button {
 
 @media (max-width: 540px) {
   .brand-logo {
-    height: 48px;
+    height: 54px;
   }
   .hero-bg-title {
     font-size: 2.1rem;

@@ -16,7 +16,7 @@ const Hero = ({ lang = 'mr' }) => {
         <div className="hero-bg-content">
           {/* Main Headline */}
           <h1 className="hero-bg-title">
-            PreneuR Seeds <br />
+            PreneuR <span className="hero-seeds-normal">Seeds Pvt. Ltd.</span> <br />
             <span className="highlight-text">For Better Tomorrow...</span>
           </h1>
 
