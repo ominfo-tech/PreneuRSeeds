@@ -327,10 +327,11 @@ button {
   padding: 6px;
 }
 
-/* Hero Section with Full Background Image */
+/* Hero Section with Full Background Image & Instant #4b8b3b Fallback */
 .hero-section-bg {
   position: relative;
   min-height: 100vh;
+  background-color: #4b8b3b;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1748,10 +1749,10 @@ button {
     transform: translateX(3px);
   }
   .nav-menu .nav-link.active {
-    background: linear-gradient(135deg, #18331d 0%, #2f6923 100%);
-    border-color: #18331d;
+    background: linear-gradient(135deg, #4b8b3b 0%, #3e7930 100%);
+    border-color: #4b8b3b;
     color: #ffffff;
-    box-shadow: 0 6px 16px rgba(24, 51, 29, 0.25);
+    box-shadow: 0 6px 16px rgba(75, 139, 59, 0.3);
   }
   .nav-menu .nav-link.active .mobile-nav-arrow {
     color: #fdd835;
@@ -2015,11 +2016,11 @@ button {
 
 /* Instagram Follow Banner Callout */
 .social-banner-callout {
-  background: linear-gradient(135deg, #18331d 0%, #244b2a 100%);
+  background: linear-gradient(135deg, #4b8b3b 0%, #3a702d 100%);
   border-radius: 22px;
   padding: 28px 36px;
   color: #ffffff;
-  box-shadow: 0 12px 32px rgba(18, 40, 22, 0.18);
+  box-shadow: 0 12px 32px rgba(75, 139, 59, 0.22);
   position: relative;
   overflow: hidden;
 }
@@ -2181,7 +2182,7 @@ button {
 
 /* Page Hero Header Section */
 .page-header-section {
-  background: linear-gradient(135deg, #132b17 0%, #1e4525 60%, #295732 100%);
+  background: linear-gradient(135deg, #4b8b3b 0%, #3e7930 60%, #326727 100%);
   padding: 65px 0 60px 0;
   color: #ffffff;
   position: relative;
@@ -2338,12 +2339,12 @@ button {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: #18331d;
+  background: #4b8b3b;
   color: #ffffff;
   padding: 14px 22px;
   border-radius: 16px;
   border: 2px solid #fdd835;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 24px rgba(75, 139, 59, 0.35);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2464,11 +2465,11 @@ button {
   font-size: 1.15rem;
   font-weight: 900;
   color: #ffffff;
-  background: linear-gradient(135deg, #18331d, #2f6923);
+  background: linear-gradient(135deg, #4b8b3b, #38702b);
   padding: 4px 14px;
   border-radius: 9999px;
   letter-spacing: 0.04em;
-  box-shadow: 0 3px 8px rgba(24, 51, 29, 0.25);
+  box-shadow: 0 3px 8px rgba(75, 139, 59, 0.3);
 }
 
 .process-step-icon {
@@ -2610,12 +2611,12 @@ button {
 }
 
 .catalog-brochure-card {
-  background: linear-gradient(135deg, #18331d 0%, #25502c 100%);
+  background: linear-gradient(135deg, #4b8b3b 0%, #3a702d 100%);
   border-radius: 22px;
   padding: 36px 40px;
   color: #ffffff;
-  box-shadow: 0 12px 32px rgba(18, 40, 22, 0.15);
-  border: 2px solid rgba(253, 216, 53, 0.3);
+  box-shadow: 0 12px 32px rgba(75, 139, 59, 0.22);
+  border: 2px solid rgba(253, 216, 53, 0.4);
 }
 
 .brochure-card-inner {
