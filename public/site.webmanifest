@@ -1,0 +1,21 @@
+{
+  "name": "PreneuR Seeds Pvt. Ltd.",
+  "short_name": "PreneuR Seeds",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#18331d",
+  "description": "Premium Quality Certified Agri Seeds for High Yield and Farmer Prosperity",
+  "icons": [
+    {
+      "src": "/animate.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/animate.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

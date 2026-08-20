@@ -1,0 +1,47 @@
+# Implementation Plan - Multi-Page Routing Architecture
+
+Transform the PreneuR Seeds website from a single-page landing page into a multi-page React application using `react-router-dom`, providing dedicated pages for every navbar item with comprehensive content and rich UI.
+
+## Proposed Routing & Architecture
+
+```mermaid
+graph TD
+    A[App.jsx Router] --> N[Navbar + TopBar]
+    A --> S[ScrollToTop]
+    A --> R[Routes]
+    R --> H["/ -> HomePage"]
+    R --> AB["/about -> AboutPage"]
+    R --> P["/products -> ProductsPage"]
+    R --> RV["/reviews -> ReviewsPage"]
+    R --> C["/contact -> ContactPage"]
+    A --> F[Footer]
+    A --> W[Floating WhatsApp]
+```
+
+## Proposed Changes
+
+### 1. Dependencies
+- Install `react-router-dom`
+
+### 2. Dedicated Pages (`src/pages/`)
+- **[NEW] `src/pages/HomePage.jsx`**: Hero, brief company spotlight, featured seed varieties, 50/50 Farmer CTA, top testimonials, and WhatsApp inquiry form.
+- **[NEW] `src/pages/AboutPage.jsx`**: Comprehensive About Us page featuring company history, mission, vision, research & development, quality testing, and leadership.
+- **[NEW] `src/pages/ProductsPage.jsx`**: Full catalog page with interactive category filters (All, Soybean, Wheat, Gram/Tur, Onion), seed specifications, sowing guides, and quick inquiry buttons.
+- **[NEW] `src/pages/ReviewsPage.jsx`**: Dedicated Farmer Success Stories & Testimonials page with yield badges, verified farmer reviews, and video/photo gallery.
+- **[NEW] `src/pages/ContactPage.jsx`**: Dedicated Contact page with interactive inquiry form, factory location, office timings, and direct WhatsApp links.
+
+### 3. Navigation & Routing Helpers
+- **[NEW] `src/components/ScrollToTop.jsx`**: Automatically scrolls the window to the top on every page change.
+- **[MODIFY] `src/components/Navbar.jsx`**: Update navigation items to use `NavLink` / `Link` from `react-router-dom` with active state highlighting and mobile drawer closing on page change.
+- **[MODIFY] `src/App.jsx`**: Setup `BrowserRouter`, `Routes`, and `Route` configuration for all pages.
+- **[MODIFY] `src/index.css`**: Page hero headers, breadcrumbs, and multi-page layout styling.
+
+## Verification Plan
+
+### Automated Build Verification
+- Run `npm run build` to verify clean compilation of all routes and pages.
+
+### Manual Verification
+- Test navigation across all 5 pages (`/`, `/about`, `/products`, `/reviews`, `/contact`).
+- Verify bilingual language switching (`मराठी / Eng`) on all pages.
+- Verify mobile menu navigation and page links.
